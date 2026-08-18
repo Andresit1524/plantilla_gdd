@@ -103,12 +103,12 @@ Veremos más adelante que cosas sí van en el GDD, además de esto.
 #pagebreak()
 
 = Contenido de un GDD
-En base a la estructura descrita antes, el contenido esperado para cada sección se describe a continuación. Es importante destacar que un GDD *no es documentación*, por lo tanto, los detalles e implementaciones del juego no van en el documento. Un GDD es para características esenciales del proyecto.
+La estructura que recomendamos consiste en 5 secciones: resumen, desarrollo, diseño, contenido y referencias. Cada una busca resolver un frente diferente y generar una visión completa sobre tu proyecto. Es importante destacar que un GDD *no es documentación*, por lo tanto, los detalles finos y de implementación no van en el documento. Un GDD es para características esenciales del proyecto.
 
 == 1. Resumen
 
 === Sinopsis
-Un resumen en 1 o 2 frases que explique porque tu juego es divertido o interesante. Como si lo fueras a poner en la descripción para Steam, por ejemplo.
+Un resumen en 1 o 2 frases que explique porque tu juego es divertido o interesante. Como si lo fueras a poner en la descripción para Steam o explicarlo a un amigo, por ejemplo.
 
 #example(source: [Expedition 33 en Steam])[
   _"Guía a la expedición 33 en su misión de acabar con la Pintora para que no vuelva a pintar la muerte. Explora un mundo inspirado en la Francia de la Belle Époque y lucha contra rivales únicos en este juego de rol por turnos con mecánicas en tiempo real."_
@@ -137,16 +137,83 @@ Tu público objetivo no es estricto: técnicamente cualquiera puede jugar tu jue
 == 2. Desarrollo
 
 === Herramientas a usar
+¿Qué herramientas, apps, o software será utilizado para producir el juego? Estos abarcan:
+
+- Motor de videojuegos y lenguajes de programación
+- IDE/Editor de texto y código
+- Gestión de código y recursos
+- Modelado 3D
+- Ilustración
+- Herramientas de productividad
+- Editores de audio
+- Librerías o software propio, si es el caso
+
+Existen algunas obviedades que puedes omitir para esta sección:
+
+- Git para control de versiones. Es menos obvio usar otra cosa, eso sí
+- WhatsApp y Discord para comunicaciones. Es el canal que todos usamos
+
+#example(source: [Slay the Spire 2])[
+  Slay the Spire 2 fue hecho en Unity + C\# y luego migrado a Godot + C\#. También se usaron librerías propietarias de Mega Crit. No parece haber mejor información sobre el resto de herramientas usadas, y de hecho puedes elegir las que quieras.
+]
 
 === Plataformas objetivo
+¿En qué plataformas y dispositivos estará disponible el juego? Cada plataforma es un mercado, un público objetivo, unas necesidades a resolver y un estilo que seguir, todas completamente diferentes, por lo que influye mucho en lo que tu juego puede ser y tener. Por ejemplo un juego competitivo o de paga seguramente no es adecuado para teléfonos, mientras que uno hipercasual no es muy adecuado para consolas. Cada plataforma es un paradigma de juego diferente.
+
+#example(source: [Undertale])[
+  Undertale fue lanzado oficiales para:
+
+  - Windows
+  - macOS
+  - Linux (SteamOS)
+  - Nintendo Switch y Switch 2
+  - Steam Deck
+  - Xbox One y Series X y S
+  - Playstation 4 y Vita
+]
+
+#pagebreak()
 
 === Flujo de trabajo
+¿Cual es la forma en la que van a trabajar como equipo/individuo? ¿Cuales son sus prioridades? ¿Pruebas rápidas, feedback, repartición de roles? Definir esto les puede despejar dudas para evitar atorarse como grupo.
+
+// TODO: usar 'Mecha Chamaleon' si es más pertinente
+#example(source: [Deltarune])[
+  Deltarune es desarrollado principalmente sobre el prototipado e ideas de Toby Fox, refinado por Temmie Chang e implementado/asistido por Toby más otros desarrolladores, algunos de #link("https://8-4.jp/")[8-4] para la versión japonesa y de consolas.
+
+  Por lo que conocemos, parece involucrar un trabajo fino y directo hacia el contenido final. Sin iteración masiva, o feedback de su comunidad.
+]
 
 == 3. Diseño
 
 === Pilares de diseño
+¿Qué rige el desarrollo de tu juego? Como si fuesen mandamientos para el grupo, los pilares de diseño son principios simples y claros que deben dirigir tu desarrollo. A diferencia de el contenido, los pilares de diseño suelen ser no cambiar durante todo el desarrollo, y plasman las ambiciones, filosofía y necesidades de tu equipo y el proyecto.
 
-=== Puntos de venta únicos
+Los pilares de diseño son útiles para contrastar y dirigir decisiones, evitando perder el rumbo o arruinar el proyecto con ideas incompatibles. Definirlos al principio también aterriza los objetivos del grupo y la forma en la que trabajarán.
+
+Los pilares de diseño pueden ser de dos tipos: prácticos, para decidir como debe ser la jugabilidad y el contenido; y filosóficos, para decidir como el equipo debe pensar sobre tu proyecto. Se recomiendan entre 3 y 5 principios bien explicados, de cualquier tipo o combinación de ellos.
+
+// TODO: busca fuentes para este ejemplo
+#example(source: [Hades])[
+  Hades, de Supergiant Games, se guía por la fusión entre los roguelikes implacables con la narrativa progresiva y dinámica. Sus principios son principalmente prácticos:
+
+  - Usar el fracaso como motor de la narrativa
+  - Minimizar el contenido repetitivo
+  - Combate rápido, frenético y súper dinámico
+  - Aspecto eléctrico y dinámico
+  - Música adaptativa e inmersiva
+]
+
+#pagebreak()
+
+=== Puntos de venta únicos (USPs)
+Un punto de venta único (_Unique Selling Points_, USP) es un elemento de tu juego que lo hace único. Plantear estos puntos para tu juego no es obligatorio, pero puede esencial para destacar y darle personalizad a tu proyecto.
+
+Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en busqueda de novedades. También es relevante que los USPs tengan algo de tu estilo o personalidad, así puedes interiorizar mejor tu idea y facilitar el ejercicio de la creatividad.
+
+#example(source: [Índigo Park])[
+  Índigo Park es que es un juego de _horror de mascotas_ (como FNAF) desarrollado por _UniqueGeese_. Uno de sus USPs es que tienes a una mascota de tu lado que guía tu experiencia, Rambley; además, tiene una historia relevante para el juego y te la cuenta él con una ternura constrastante. Esto subvierte su género, que suele tener a todos los personajes como enemigos, sin contexto y sin mayor atractivo que los _screamers_ o un lore cuestionable.
+]
 
 === Experiencia del jugador
 
