@@ -31,4 +31,22 @@
 }
 
 /// Recuadro sólido
-#let highlight(body) = rect(inset: 1em, radius: 1em, fill: green_gdd.transparentize(90%), body)
+#let highlight(body) = rect(inset: 1em, radius: 1em, fill: green_gdd.transparentize(90%), width: 100%, body)
+
+/// Ejemplo
+#let example(body, source: "") = highlight[
+  #box(
+    fill: green_gdd.transparentize(30%),
+    radius: 50%,
+    inset: 0.1em,
+    outset: 0.5em,
+  )[*Ejemplo*]
+  #h(1em)
+  #if source != "" {
+    set text(fill: luma(25%))
+    source
+  }
+
+  #body
+
+]
