@@ -1,9 +1,5 @@
-#set text(font: "Ancizar Sans", lang: "es")
-#show raw: set text(font: "Google Sans Code NF")
-#show link: set text(fill: blue)
-#set document(title: [Guía para escritura de GDDs])
-#set page(background: image("assets/logo_green.png", width: 60%))
-
+#import "/style.typ": *
+#show: style
 #title()
 
 = ¿Porque pedimos un GDD monolítico?
@@ -13,72 +9,68 @@ El propósito principal de seguir esta estructura es porque es perfecta para *ar
 
 En todo caso es recomendable solo hacer un GDD monolítico dentro de un tiempo y extensión razonables, y antes de empezar el proyecto. Si inicias el desarrollo, escribe tu GDD en un formato colaborativo que te permita iterar y adaptar el proyecto a sus avances.
 
-#block(fill: blue.lighten(50%).transparentize(50%), inset: 1em, radius: 1em)[
-  #place(dx: 40%, dy: 40%)[
-    #set text(size: 3em, fill: luma(40%))
-    *`->`*
-  ]
+= Estructura para GDDs
+#highlight[
   #columns(2)[
     #set text(fill: red.darken(20%))
     == Estructura vieja
-    *Datos generales*
-    - Resumen/Gancho
-    - Género
-    - Audiencia objetivo
-    - Plataformas
-    - Herramientas
-    *Diseño general*
-    - Experiencia del jugador
-    - Pilares de diseño
-    - Puntos de venta únicos (USPs)
-    *Diseño detallado*
-    - Mecánicas
-    - Estilo artístico
-    - Escenario/Mundo
-    - Historia
-    - Interfaz
-    - Música/sonido
-    - Game loop
-    - Progresión
-    - Sistemas
-    *Referencias* \
-    *Anexos*
+    1. *Datos generales*
+      - Resumen/Gancho
+      - Género
+      - Audiencia objetivo
+      - Plataformas
+      - Herramientas
+    + *Diseño general*
+      - Experiencia del jugador
+      - Pilares de diseño
+      - Puntos de venta únicos (USPs)
+    + *Diseño detallado*
+      - Mecánicas
+      - Estilo artístico
+      - Escenario/Mundo
+      - Historia
+      - Interfaz
+      - Música/sonido
+      - Game loop
+      - Progresión
+      - Sistemas
+    + *Referencias* \
+    + *Anexos*
 
     #colbreak()
 
     #set text(fill: black)
-    == Nueva estructura
-    *Resumen*
-    - Sinopsis
-    - Género
-    - Público objetivo
-    *Desarrollo*
-    - Herramientas a usar
-    - Plataformas objetivo
-    - Flujo de trabajo
-    *Diseño*
-    - Pilares de diseño
-    - Puntos de venta únicos (USPs)
-    - Experiencia del jugador
-    - Game loop
-    - Progresión
-    - Sistemas
-    *Contenido*
-    - Mecánicas
-    - Estilo artístico
-    - Música y sonido
-    - Mundo o escenario
-    - Historia
-    - Interfaz
-    *Referencias*
-    - Inspiraciones
-    - Contenido preliminar
-    - Anexos
+    == Estructura nueva
+    1. *Resumen*
+      - Sinopsis
+      - Género
+      - Público objetivo
+    + *Desarrollo*
+      - Herramientas a usar
+      - Plataformas objetivo
+      - Flujo de trabajo
+    + *Diseño*
+      - Pilares de diseño
+      - Puntos de venta únicos (USPs)
+      - Experiencia del jugador
+      - Game loop
+      - Progresión
+      - Sistemas
+    + *Contenido*
+      - Mecánicas
+      - Estilo artístico
+      - Música y sonido
+      - Mundo o escenario
+      - Historia
+      - Interfaz
+    + *Referencias*
+      - Inspiraciones
+      - Contenido preliminar
+      - Anexos
   ]
 ]
 
-Si alguno de estos falta, es porque:
-
+=== ¿Y lo que falta?
 - Mecánicas principales vs secundarias: va en *Mecánicas*
 - Game feel: va en *Experiencia del jugador*
 - Curva de dificultad y ritmo del juego: va en *Progresión*
@@ -95,6 +87,8 @@ Si alguno de estos falta, es porque:
 
 // - Contenido planeado para MVP
 // - Alcance planeado
+
+#pagebreak()
 
 = Bibliografía
 - Estructura profesional por UDIT. https://www.udit.es/el-manifiesto-del-game-designer-por-que-tu-juego-necesita-un-game-design-document-gdd-y-como-crearlo-como-los-profesionales/
