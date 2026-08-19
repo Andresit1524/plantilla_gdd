@@ -216,12 +216,64 @@ Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en busqueda
 ]
 
 === Experiencia del jugador
+¿Qué experiencia se espera generar en el jugador durante todo el juego? ¿Que fantasía queremos alimentar en el jugador? Usualmente, la experiencia deseada se puede explicar como:
+
+- Transmitir una sensación o emoción
+- Ser/personificar a un personaje
+- Hacer una actividad en particular
+
+#example(source: [Undertale])[
+  Undertale es bien conocido por subvertir los RPGs al introducir el concepto de perdón y poder de decisión a lo largo de la historia. La experiencia aboga por sentir valor en tus acciones y actuar de corazón más que por "piloto autómatico para jugar RPGs".
+]
+
+#pagebreak()
 
 === Game loop
+Un _game loop_ es un diagrama en bucle o explicación que describe el núcleo de las mecánicas del jugador, y el orden y posibilidades en las que el jugador hace sus acciones. Esto se considera diseño, y no contenido, debido a que el game loop no depende del contenido, y en cambio, lo dirige.
+
+El game loop está estrechamente relacionada con el género de tu videojuego, así que puedes empezar consultando el game loop típico de los géneros que abarca tu proyecto, y luego adaptándolo a tu gusto o necesidad. Puedes hacer los diagramas en Mermaid, Miro, Canva o la herramienta de tu gusto. O explicarlo en texto si es más adecuado.
+
+#example[
+  Los juegos de disparos/FPS (como Fornite) suelen compartir el mismo bucle básico:
+
+  #figure[
+    #image("assets/game_loop.png", width: 50%)
+  ]
+
+  Otras acciones como áreas seguras o _loot_ dependen del juego.
+]
 
 === Progresión
+¿Cómo progresa el jugador en tu juego? ¿Cuáles son sus objetivos a corto y largo plazo? ¿Están estos objetivos alineados con la fantasía que se quiere transmitir? Igual que el game loop, esto se suele definir con base en el género que elegiste.
+
+Por supuesto, la progresión depende también del contenido y la historia de tu juego, aunque no lo define _per se_.
+
+#example(source: [Pokémon])[
+  En Pokémon, tus objetivos a corto plazo son conseguir medallas y mejorar a tus Pokémon, todo con el fin de acercarte a derrotar al Alto mando y luego, al campeón de la región.
+]
 
 === Sistemas
+¿Qué sistemas posee tu juego? ¿Como impactan o dirigen la experiencia del jugador? Los sistemas suelen abarcar:
+
+- Economía y manejo de recursos
+- Rangos, escalas y puntajes
+- *Funcionamiento* de mecánicas clave. El _contenido_ y contexto de esas mecánicas va más adelante
+
+No debes incluir implementaciones ni detalles finos de los sistemas (ej: fórmulas del sistema Elo o precios de artículos clave), pues no son relevantes. Esos van en la documentación del proyecto, y acá solo explicas como funcionan y porque son importantes.
+
+Algunos ejemplos triviales que puedes omitir:
+
+- Interfaz de usuario (asumimos que todos los juegos tienen esto)
+- Sistemas de la implementación (ej: Sistema de programación con _Blueprints_)
+- Sistema de movimiento para personajes (un poco obvio)
+
+Puedes incluirlos si son lo suficientemente relevantes o únicos para la identidad de tu juego, pero si son sistemas comunes o esenciales a cualquier juego, mejor omitirlos.
+
+#example(source: [Ajedrez])[
+  El ajedrez tiene su característico sistema Elo, pero no es muy adecuado explicar la fórmula, sino los conceptos claves del sistema y como impacta a los jugadores: en este caso, el Elo de usa para armar partidas y clasificar jugadores.
+
+  Por otro lado, explicar las reglas del ajedrez como un sistema sería irrelevante, aunque para un videojuego (y uno nuevo) quizá no es el caso.
+]
 
 == 4. Contenido
 
@@ -240,10 +292,17 @@ Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en busqueda
 == 5. Referencias
 
 === Inspiraciones
+¿Cuáles obras te inspiran a hacer tu juego? Es común y casi inevitable que sean otros juegos, pero también pueden ser libros, películas, experiencias y mucho más. Explica en que te inspiras y que quieres retomar de esos proyectos. Para proyectos no muy conocidos quizá sea adecuado un link o explicación.
+
+#example(source: [Beast Card Clash])[
+  #link("https://richigame.itch.io/beast-card-clash")[Beast Card Clash] es uno de los proyectos más avanzados y recientes de GDD. Está inspirado fuertemente en Jiujitsu Fuego de Club Penguin, y recuerda a elementos de mundo abierto y roguelike sencillos. La estética _cozy_ que busca es familiar a juegos como _Animal Crossing_.
+]
 
 === Contenido preliminar
+Aquí puedes añadir cualquier cosa que ya tengas para tu proyecto: bocetos, ideas rápidas de contenido, evidencias de un prototipo, etc.
 
-=== Anexos
+=== Anexos (opcional)
+Cualquier nota o elemento que quieras añadir y que no sea de ninguna categoría del documento va acá.
 
 #pagebreak()
 
