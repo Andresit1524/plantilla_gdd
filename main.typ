@@ -12,8 +12,8 @@ Hay dos métodos para hacer un GDD:
 
 Nosotros usamos ambas formas, y ambas son útiles. Pero para el *checkpoint 1* pedimos un GDD monolítico. El GDD vivo se escribe durante el desarrollo y no sigue ninguna estructura específica, aunque esta guía es igual de adecuada para ese tipo de documentos.
 
-== ¿Porque pedimos un GDD monolítico?
-Un GDD monolítico es el que se escribe en un sólo documento exhaustivo, es extenso, poco atractivo de leer, se desactualiza y no se adapta al proceso creativo de un proyecto. Entonces ¿por qué lo usamos?
+== ¿Por qué pedimos un GDD monolítico?
+Un GDD monolítico es el que se escribe en un solo documento exhaustivo, es extenso, poco atractivo de leer, se desactualiza y no se adapta al proceso creativo de un proyecto. Entonces ¿por qué lo usamos?
 
 El propósito principal de seguir esta estructura es porque es perfecta para *argumentar tu proyecto*. Te obliga a responder preguntas mientras el GDD guarda las respuestas. Tu documento no quedará de 100 páginas, quizás unas 20 o 50 como máximo. Eso es perfectamente legible en la práctica, así que no es un archivo infinito e inútil; es un documento accesible y orientado a la planificación.
 
@@ -90,7 +90,7 @@ En todo caso es recomendable solo hacer un GDD monolítico dentro de un tiempo y
 - Tutoriales o aprendizaje del jugador: va en *Experiencia del jugador*
 - Flujo del usuario: va en *Interfaz* o se intuye del resto del documento
 - Roadmap de desarrollo para el semestre: *no va en un GDD*
-- Requerimientos técnicos para el juego: *dificil de dimensionar y poco relevante*
+- Requerimientos técnicos para el juego: *difícil de dimensionar y poco relevante*
 - Investigación de mercado: va como justificación/análisis en *Puntos de venta únicos*
 
 // Estos sí faltan
@@ -98,7 +98,7 @@ En todo caso es recomendable solo hacer un GDD monolítico dentro de un tiempo y
 // - Contenido planeado para MVP
 // - Alcance planeado
 
-Veremos más adelante que cosas sí van en el GDD, además de esto.
+Veremos más adelante qué cosas sí van en el GDD, además de esto.
 
 #pagebreak()
 
@@ -108,23 +108,23 @@ La estructura que recomendamos consiste en 5 secciones: resumen, desarrollo, dis
 == 1. Resumen
 
 === Sinopsis
-Un resumen en 1 o 2 frases que explique porque tu juego es divertido o interesante. Como si lo fueras a poner en la descripción para Steam o explicarlo a un amigo, por ejemplo.
+Un resumen en 1 o 2 frases que explique por qué tu juego es divertido o interesante. Como si lo fueras a poner en la descripción para Steam o explicarlo a un amigo, por ejemplo.
 
 #example(source: [Expedition 33 en Steam])[
   _"Guía a la expedición 33 en su misión de acabar con la Pintora para que no vuelva a pintar la muerte. Explora un mundo inspirado en la Francia de la Belle Époque y lucha contra rivales únicos en este juego de rol por turnos con mecánicas en tiempo real."_
 ]
 
 === Género
-¿Cuál es el género de tu videojuego? esto suele decidir directamente una gran cantidad de características y lo enmarca en un tipo de juego específico. En #link("https://en.wikipedia.org/wiki/List_of_video_game_genres")[Wikipedia (inglés)] encuentras una lista para que te guíes. Un juego puede tener más de un género a la vez.
+¿Cuál es el género de tu videojuego? Esto suele decidir directamente una gran cantidad de características y lo enmarca en un tipo de juego específico. En #link("https://en.wikipedia.org/wiki/List_of_video_game_genres")[Wikipedia (inglés)] encuentras una lista para que te guíes. Un juego puede tener más de un género a la vez.
 
 #example(source: [Grand Theft Auto V])[
   GTA V (y toda la saga _Grand Theft Auto_) es un juego de acción, aventura y mundo abierto. Es común que la acción y aventura vayan juntos, de hecho.
 ]
 
 === Público objetivo
-Tu juego *jamás* será para todos. Definir que tipo de persona quieres que juege tu juego te ayudará a comprender que necesitas hacer. Describe motivaciones, gustos, edades, géneros, e incluso inspiraciones y características que puedan guiar a las personas indicadas a jugar tu juego.
+Tu juego *jamás* será para todos. Definir qué tipo de persona quieres que juegue tu juego te ayudará a comprender qué necesitas hacer. Describe motivaciones, gustos, edades, géneros, e incluso inspiraciones y características que puedan guiar a las personas indicadas a jugar tu juego.
 
-Tu público objetivo no es estricto: técnicamente cualquiera puede jugar tu juego, pero no a todos les va a gustar. Esto último está fuera de tu público objetivo. Además, el público objetivo define claramente quienes no deberían jugar. Un juego +18 no debe ser jugado por menores de edad, mientras que un juego para preescolares es completamente inadecuado o irrelevante para adultos.
+Tu público objetivo no es estricto: técnicamente cualquiera puede jugar tu juego, pero no a todos les va a gustar. Esto último está fuera de tu público objetivo. Además, el público objetivo define claramente quiénes no deberían jugar. Un juego +18 no debe ser jugado por menores de edad, mientras que un juego para preescolares es completamente inadecuado o irrelevante para adultos.
 
 #example(source: [Minecraft])[
   Minecraft es uno de los videojuegos más universales de los tiempos modernos. Pero no le impide limitar su público objetivo a:
@@ -161,7 +161,7 @@ Existen algunas obviedades que puedes omitir para esta sección:
 ¿En qué plataformas y dispositivos estará disponible el juego? Cada plataforma es un mercado, un público objetivo, unas necesidades a resolver y un estilo que seguir, todas completamente diferentes, por lo que influye mucho en lo que tu juego puede ser y tener. Por ejemplo un juego competitivo o de paga seguramente no es adecuado para teléfonos, mientras que uno hipercasual no es muy adecuado para consolas. Cada plataforma es un paradigma de juego diferente.
 
 #example(source: [Undertale])[
-  Undertale fue lanzado oficiales para:
+  Undertale fue lanzado oficialmente para:
 
   - Windows
   - macOS
@@ -175,7 +175,7 @@ Existen algunas obviedades que puedes omitir para esta sección:
 #pagebreak()
 
 === Flujo de trabajo
-¿Cual es la forma en la que van a trabajar como equipo/individuo? ¿Cuales son sus prioridades? ¿Pruebas rápidas, feedback, repartición de roles? Definir esto les puede despejar dudas para evitar atorarse como grupo.
+¿Cuál es la forma en la que van a trabajar como equipo/individuo? ¿Cuáles son sus prioridades? ¿Pruebas rápidas, feedback, repartición de roles? Definir esto les puede despejar dudas para evitar atorarse como grupo.
 
 // TODO: usar 'Mecha Chamaleon' si es más pertinente
 #example(source: [Deltarune])[
@@ -187,11 +187,11 @@ Existen algunas obviedades que puedes omitir para esta sección:
 == 3. Diseño
 
 === Pilares de diseño
-¿Qué rige el desarrollo de tu juego? Como si fuesen mandamientos para el grupo, los pilares de diseño son principios simples y claros que deben dirigir tu desarrollo. A diferencia de el contenido, los pilares de diseño suelen ser no cambiar durante todo el desarrollo, y plasman las ambiciones, filosofía y necesidades de tu equipo y el proyecto.
+¿Qué rige el desarrollo de tu juego? Como si fuesen mandamientos para el grupo, los pilares de diseño son principios simples y claros que deben dirigir tu desarrollo. A diferencia del contenido, los pilares de diseño no suelen cambiar durante todo el desarrollo, y plasman las ambiciones, filosofía y necesidades de tu equipo y el proyecto.
 
 Los pilares de diseño son útiles para contrastar y dirigir decisiones, evitando perder el rumbo o arruinar el proyecto con ideas incompatibles. Definirlos al principio también aterriza los objetivos del grupo y la forma en la que trabajarán.
 
-Los pilares de diseño pueden ser de dos tipos: prácticos, para decidir como debe ser la jugabilidad y el contenido; y filosóficos, para decidir como el equipo debe pensar sobre tu proyecto. Se recomiendan entre 3 y 5 principios bien explicados, de cualquier tipo o combinación de ellos.
+Los pilares de diseño pueden ser de dos tipos: prácticos, para decidir cómo debe ser la jugabilidad y el contenido; y filosóficos, para decidir cómo el equipo debe pensar sobre tu proyecto. Se recomiendan entre 3 y 5 principios bien explicados, de cualquier tipo o combinación de ellos.
 
 #example(source: [Hades])[
   Hades, de Supergiant Games, se guía por la fusión entre los roguelikes implacables con la narrativa progresiva y dinámica. Sus principios son principalmente prácticos:
@@ -206,23 +206,23 @@ Los pilares de diseño pueden ser de dos tipos: prácticos, para decidir como de
 #pagebreak()
 
 === Puntos de venta únicos (USPs)
-Un punto de venta único (_Unique Selling Points_, USP) es un elemento de tu juego que lo hace único. Plantear estos puntos para tu juego no es obligatorio, pero puede esencial para destacar y darle personalizad a tu proyecto.
+Un punto de venta único (_Unique Selling Points_, USP) es un elemento de tu juego que lo hace único. Plantear estos puntos para tu juego no es obligatorio, pero puede ser esencial para destacar y darle personalidad a tu proyecto.
 
-Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en busqueda de novedades. También es relevante que los USPs tengan algo de tu estilo o personalidad, así puedes interiorizar mejor tu idea y facilitar el ejercicio de la creatividad.
+Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en búsqueda de novedades. También es relevante que los USPs tengan algo de tu estilo o personalidad, así puedes interiorizar mejor tu idea y facilitar el ejercicio de la creatividad.
 
 #example(source: [Índigo Park: Chapter 1])[
-  Índigo Park es que es un juego de _horror de mascotas_ (como FNAF) creado por Mason Myers (_UniqueGeese_). Uno de sus USPs es que tienes a una mascota de tu lado que guía tu experiencia, Rambley; además, tiene una historia relevante para el juego y te la cuenta él con una ternura constrastante. Esto subvierte su género, que suele tener a todos los personajes como enemigos, sin contexto y sin mayor atractivo que los _screamers_ o un lore cuestionable.
+  Índigo Park es un juego de _horror de mascotas_ (como FNAF) creado por Mason Myers (_UniqueGeese_). Uno de sus USPs es que tienes a una mascota de tu lado que guía tu experiencia, Rambley; además, tiene una historia relevante para el juego y te la cuenta él con una ternura contrastante. Esto subvierte su género, que suele tener a todos los personajes como enemigos, sin contexto y sin mayor atractivo que los _screamers_ o un lore cuestionable.
 ]
 
 === Experiencia del jugador
-¿Qué experiencia se espera generar en el jugador durante todo el juego? ¿Que fantasía queremos alimentar en el jugador? Usualmente, la experiencia deseada se puede explicar como:
+¿Qué experiencia se espera generar en el jugador durante todo el juego? ¿Qué fantasía queremos alimentar en el jugador? Usualmente, la experiencia deseada se puede explicar como:
 
 - Transmitir una sensación o emoción
 - Ser/personificar a un personaje
 - Hacer una actividad en particular
 
 #example(source: [Undertale])[
-  Undertale es bien conocido por subvertir los RPGs al introducir el concepto de perdón y poder de decisión a lo largo de la historia. La experiencia aboga por sentir valor en tus acciones y actuar de corazón más que por "piloto autómatico para jugar RPGs".
+  Undertale es bien conocido por subvertir los RPGs al introducir el concepto de perdón y poder de decisión a lo largo de la historia. La experiencia aboga por sentir valor en tus acciones y actuar de corazón más que por "piloto automático para jugar RPGs".
 ]
 
 #pagebreak()
@@ -230,10 +230,10 @@ Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en busqueda
 === Game loop
 Un _game loop_ es un diagrama en bucle o explicación que describe el núcleo de las mecánicas del jugador, y el orden y posibilidades en las que el jugador hace sus acciones. Esto se considera diseño, y no contenido, debido a que el game loop no depende del contenido, y en cambio, lo dirige.
 
-El game loop está estrechamente relacionada con el género de tu videojuego, así que puedes empezar consultando el game loop típico de los géneros que abarca tu proyecto, y luego adaptándolo a tu gusto o necesidad. Puedes hacer los diagramas en Mermaid, Miro, Canva o la herramienta de tu gusto. O explicarlo en texto si es más adecuado.
+El game loop está estrechamente relacionado con el género de tu videojuego, así que puedes empezar consultando el game loop típico de los géneros que abarca tu proyecto, y luego adaptándolo a tu gusto o necesidad. Puedes hacer los diagramas en Mermaid, Miro, Canva o la herramienta de tu gusto. O explicarlo en texto si es más adecuado.
 
 #example[
-  Los juegos de disparos/FPS (como Fornite) suelen compartir el mismo bucle básico:
+  Los juegos de disparos/FPS (como Fortnite) suelen compartir el mismo bucle básico:
 
   #figure[
     #image("assets/game_loop.png", width: 50%)
@@ -248,17 +248,17 @@ El game loop está estrechamente relacionada con el género de tu videojuego, as
 Por supuesto, la progresión depende también del contenido y la historia de tu juego, aunque no lo define _per se_.
 
 #example(source: [Saga Pokémon])[
-  En Pokémon, tus objetivos a corto plazo son conseguir medallas y mejorar a tus Pokémon, todo con el fin de acercarte a derrotar al Alto mando y luego, al campeón de la región.
+  En Pokémon, tus objetivos a corto plazo son conseguir medallas y mejorar a tus Pokémon, todo con el fin de acercarte a derrotar al Alto Mando y luego, al campeón de la región.
 ]
 
 === Sistemas
-¿Qué sistemas posee tu juego? ¿Como impactan o dirigen la experiencia del jugador? Los sistemas suelen abarcar:
+¿Qué sistemas posee tu juego? ¿Cómo impactan o dirigen la experiencia del jugador? Los sistemas suelen abarcar:
 
 - Economía y manejo de recursos
 - Rangos, escalas y puntajes
 - *Funcionamiento* de mecánicas clave. El _contenido_ y contexto de esas mecánicas va más adelante
 
-No debes incluir implementaciones ni detalles finos de los sistemas (ej: fórmulas del sistema Elo o precios de artículos clave), pues no son relevantes. Esos van en la documentación del proyecto, y acá solo explicas como funcionan y porque son importantes.
+No debes incluir implementaciones ni detalles finos de los sistemas (ej: fórmulas del sistema Elo o precios de artículos clave), pues no son relevantes. Esos van en la documentación del proyecto, y acá solo explicas cómo funcionan y por qué son importantes.
 
 Algunos ejemplos triviales que puedes omitir:
 
@@ -269,7 +269,7 @@ Algunos ejemplos triviales que puedes omitir:
 Puedes incluirlos si son lo suficientemente relevantes o únicos para la identidad de tu juego, pero si son sistemas comunes o esenciales a cualquier juego, mejor omitirlos.
 
 #example(source: [Ajedrez])[
-  El ajedrez tiene su característico sistema Elo, pero no es muy adecuado explicar la fórmula, sino los conceptos claves del sistema y como impacta a los jugadores: en este caso, el Elo de usa para armar partidas y clasificar jugadores.
+  El ajedrez tiene su característico sistema Elo, pero no es muy adecuado explicar la fórmula, sino los conceptos claves del sistema y cómo impacta a los jugadores: en este caso, el Elo se usa para armar partidas y clasificar jugadores.
 
   Por otro lado, explicar las reglas del ajedrez como un sistema sería irrelevante, aunque para un videojuego (y uno nuevo) quizá no es el caso.
 ]
@@ -284,12 +284,12 @@ Puedes incluirlos si son lo suficientemente relevantes o únicos para la identid
 ]
 
 === Estilo artístico
-El estilo artístico de tu juego es la forma en la que se ve. Puede ser arte vectorial, _low poly_, _pixel art_, ilustrado, realista, entre otros. Es recomendable atender a estilos específicos y bien descrito, por ejemplo, no decir pixel art, sino explicar que tipo de pixel art (8-bit, Hi-res, rotoscopia-3D).
+El estilo artístico de tu juego es la forma en la que se ve. Puede ser arte vectorial, _low poly_, _pixel art_, ilustrado, realista, entre otros. Es recomendable atender a estilos específicos y bien descritos, por ejemplo, no decir pixel art, sino explicar qué tipo de pixel art (8-bit, Hi-res, rotoscopia-3D).
 
 #example(source: [Deltarune])[
   Deltarune usa pixel art, pero no basta decir eso. Sigue una técnica tradicional, resolución baja-media y un estilo dinámico y moderno, sin dejar de lado sus raíces retro.
 
-  Si lo comparas con Undertale, del mismo autor, notarás que sus estilos ya son significativamente diferentes. Por eso es importante hacer especificación sobre que tipo de arte queremos.
+  Si lo comparas con Undertale, del mismo autor, notarás que sus estilos ya son significativamente diferentes. Por eso es importante hacer especificación sobre qué tipo de arte queremos.
 ]
 
 === Música y sonido
@@ -300,7 +300,7 @@ El estilo artístico de tu juego es la forma en la que se ve. Puede ser arte vec
 ]
 
 === Mundo y escenarios
-¿En qué mundo se desarrolla el juego? ¿Cuáles son las características de este mundo? ¿Cuáles son los acontecimientos principales que distinguen el mundo en que se presenta el juego? Además de la construcción del mundo, también puede ser adecuado añadir transfondo o _lore_, aunque también puede ir en la historia más adelante.
+¿En qué mundo se desarrolla el juego? ¿Cuáles son las características de este mundo? ¿Cuáles son los acontecimientos principales que distinguen el mundo en que se presenta el juego? Además de la construcción del mundo, también puede ser adecuado añadir trasfondo o _lore_, aunque también puede ir en la historia más adelante.
 
 Evita incluir detalles demasiado específicos o irrelevantes.
 
@@ -312,7 +312,7 @@ Evita incluir detalles demasiado específicos o irrelevantes.
 ¿Cuáles son los puntos principales de la historia que se va a contar en el juego?
 
 #example(source: [God of War])[
-  En God of War se cuenta la historia de Kratos, un guerrero espartano que le vendió su alma al dios de la guerra, Ares, en un enfrentamiento contra otro ejército. Sin embargo, al vender su alma, Kratos acaba asesinando a su familia por una trampa de Ares, convirtiéndose en el Fantasma de Sparta. Kratos decide seguir órdenes de los dioses para que los mismos le borren los recuerdos de su familia.
+  En God of War se cuenta la historia de Kratos, un guerrero espartano que le vendió su alma al dios de la guerra, Ares, en un enfrentamiento contra otro ejército. Sin embargo, al vender su alma, Kratos acaba asesinando a su familia por una trampa de Ares, convirtiéndose en el Fantasma de Esparta. Kratos decide seguir órdenes de los dioses para que los mismos le borren los recuerdos de su familia.
 
   En el juego, Kratos se embarca en una misión para obtener la caja de Pandora con el fin de derrotar a Ares a petición de los dioses. Luego de algunos giros de trama, Kratos acaba enfrentándose a Ares, y al matarlo, se convierte en el nuevo dios de la guerra.
 ]
@@ -321,7 +321,7 @@ Evita incluir detalles demasiado específicos o irrelevantes.
 ¿Cómo interactúa el jugador con el juego? ¿Cómo el juego comunica información importante al jugador? Ten en cuenta controles, entradas, menús y elementos de la interfaz gráfica en general.
 
 #example(source: [Doki Doki Literature Club & Minecraft])[
-  En las novelas visuales, como Doki Doki Literature Club, todo se basa en tomar algunas decisiones, realizar algunos minijuegos y dar click para continuar con los diálogos. El jugador interactúa con estas opciones de continuar un diálogo y tomar una decisión.
+  En las novelas visuales, como Doki Doki Literature Club, todo se basa en tomar algunas decisiones, realizar algunos minijuegos y dar clic para continuar con los diálogos. El jugador interactúa con estas opciones de continuar un diálogo y tomar una decisión.
 
   En Minecraft, tienes un menú de inventario, y puedes interactuar rompiendo bloques, poniéndolos, construyendo herramientas, etc. Además, en este juego tienes un indicador de vida y de salud que te indica si estás a punto de morir o si necesitas comer para no morir de hambre.
 ]
@@ -329,10 +329,10 @@ Evita incluir detalles demasiado específicos o irrelevantes.
 == 5. Referencias
 
 === Inspiraciones
-¿Cuáles obras te inspiran a hacer tu juego? Es común y casi inevitable que sean otros juegos, pero también pueden ser libros, películas, experiencias y mucho más. Explica en que te inspiras y que quieres retomar de esos proyectos. Para proyectos no muy conocidos quizá sea adecuado un link o explicación.
+¿Cuáles obras te inspiran a hacer tu juego? Es común y casi inevitable que sean otros juegos, pero también pueden ser libros, películas, experiencias y mucho más. Explica en qué te inspiras y qué quieres retomar de esos proyectos. Para proyectos no muy conocidos quizá sea adecuado un link o explicación.
 
 #example(source: [Beast Card Clash])[
-  #link("https://richigame.itch.io/beast-card-clash")[Beast Card Clash] es uno de los proyectos más avanzados y recientes de GDD. Está inspirado fuertemente en Jiujitsu Fuego de Club Penguin, y recuerda a elementos de mundo abierto y roguelike sencillos. La estética _cozy_ que busca es familiar a juegos como _Animal Crossing_.
+  #link("https://richigame.itch.io/beast-card-clash")[Beast Card Clash] es uno de los proyectos más avanzados y recientes de GDD. Está inspirado fuertemente en Jujitsu Fuego de Club Penguin, y recuerda a elementos de mundo abierto y roguelike sencillos. La estética _cozy_ que busca es familiar a juegos como _Animal Crossing_.
 ]
 
 === Contenido preliminar
