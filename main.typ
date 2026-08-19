@@ -117,7 +117,7 @@ Un resumen en 1 o 2 frases que explique porque tu juego es divertido o interesan
 === Género
 ¿Cuál es el género de tu videojuego? esto suele decidir directamente una gran cantidad de características y lo enmarca en un tipo de juego específico. En #link("https://en.wikipedia.org/wiki/List_of_video_game_genres")[Wikipedia (inglés)] encuentras una lista para que te guíes. Un juego puede tener más de un género a la vez.
 
-#example(source: [Grand Theft Auto])[
+#example(source: [Grand Theft Auto V])[
   GTA V (y toda la saga _Grand Theft Auto_) es un juego de acción, aventura y mundo abierto. Es común que la acción y aventura vayan juntos, de hecho.
 ]
 
@@ -193,7 +193,6 @@ Los pilares de diseño son útiles para contrastar y dirigir decisiones, evitand
 
 Los pilares de diseño pueden ser de dos tipos: prácticos, para decidir como debe ser la jugabilidad y el contenido; y filosóficos, para decidir como el equipo debe pensar sobre tu proyecto. Se recomiendan entre 3 y 5 principios bien explicados, de cualquier tipo o combinación de ellos.
 
-// TODO: busca fuentes para este ejemplo
 #example(source: [Hades])[
   Hades, de Supergiant Games, se guía por la fusión entre los roguelikes implacables con la narrativa progresiva y dinámica. Sus principios son principalmente prácticos:
 
@@ -211,8 +210,8 @@ Un punto de venta único (_Unique Selling Points_, USP) es un elemento de tu jue
 
 Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en busqueda de novedades. También es relevante que los USPs tengan algo de tu estilo o personalidad, así puedes interiorizar mejor tu idea y facilitar el ejercicio de la creatividad.
 
-#example(source: [Índigo Park])[
-  Índigo Park es que es un juego de _horror de mascotas_ (como FNAF) desarrollado por _UniqueGeese_. Uno de sus USPs es que tienes a una mascota de tu lado que guía tu experiencia, Rambley; además, tiene una historia relevante para el juego y te la cuenta él con una ternura constrastante. Esto subvierte su género, que suele tener a todos los personajes como enemigos, sin contexto y sin mayor atractivo que los _screamers_ o un lore cuestionable.
+#example(source: [Índigo Park: Chapter 1])[
+  Índigo Park es que es un juego de _horror de mascotas_ (como FNAF) creado por Mason Myers (_UniqueGeese_). Uno de sus USPs es que tienes a una mascota de tu lado que guía tu experiencia, Rambley; además, tiene una historia relevante para el juego y te la cuenta él con una ternura constrastante. Esto subvierte su género, que suele tener a todos los personajes como enemigos, sin contexto y sin mayor atractivo que los _screamers_ o un lore cuestionable.
 ]
 
 === Experiencia del jugador
@@ -248,7 +247,7 @@ El game loop está estrechamente relacionada con el género de tu videojuego, as
 
 Por supuesto, la progresión depende también del contenido y la historia de tu juego, aunque no lo define _per se_.
 
-#example(source: [Pokémon])[
+#example(source: [Saga Pokémon])[
   En Pokémon, tus objetivos a corto plazo son conseguir medallas y mejorar a tus Pokémon, todo con el fin de acercarte a derrotar al Alto mando y luego, al campeón de la región.
 ]
 
@@ -312,7 +311,7 @@ Evita incluir detalles demasiado específicos o irrelevantes.
 === Historia
 ¿Cuáles son los puntos principales de la historia que se va a contar en el juego?
 
-#example(source: [God of War (2004)])[
+#example(source: [God of War])[
   En God of War se cuenta la historia de Kratos, un guerrero espartano que le vendió su alma al dios de la guerra, Ares, en un enfrentamiento contra otro ejército. Sin embargo, al vender su alma, Kratos acaba asesinando a su familia por una trampa de Ares, convirtiéndose en el Fantasma de Sparta. Kratos decide seguir órdenes de los dioses para que los mismos le borren los recuerdos de su familia.
 
   En el juego, Kratos se embarca en una misión para obtener la caja de Pandora con el fin de derrotar a Ares a petición de los dioses. Luego de algunos giros de trama, Kratos acaba enfrentándose a Ares, y al matarlo, se convierte en el nuevo dios de la guerra.
@@ -321,7 +320,7 @@ Evita incluir detalles demasiado específicos o irrelevantes.
 === Interfaz
 ¿Cómo interactúa el jugador con el juego? ¿Cómo el juego comunica información importante al jugador? Ten en cuenta controles, entradas, menús y elementos de la interfaz gráfica en general.
 
-#example()[
+#example(source: [Doki Doki Literature Club & Minecraft])[
   En las novelas visuales, como Doki Doki Literature Club, todo se basa en tomar algunas decisiones, realizar algunos minijuegos y dar click para continuar con los diálogos. El jugador interactúa con estas opciones de continuar un diálogo y tomar una decisión.
 
   En Minecraft, tienes un menú de inventario, y puedes interactuar rompiendo bloques, poniéndolos, construyendo herramientas, etc. Además, en este juego tienes un indicador de vida y de salud que te indica si estás a punto de morir o si necesitas comer para no morir de hambre.
@@ -345,6 +344,23 @@ Cualquier nota o elemento que quieras añadir y que no sea de ninguna categoría
 #pagebreak()
 
 = Bibliografía
-- Estructura profesional de un GDD por UDIT. https://www.udit.es/el-manifiesto-del-game-designer-por-que-tu-juego-necesita-un-game-design-document-gdd-y-como-crearlo-como-los-profesionales/
-- Tutorial por Alva Mayo. https://youtu.be/ZKo4uRTxdCA
-- Documento de diseño de videojuegos - Wikipedia. https://es.wikipedia.org/wiki/Documento_de_dise%C3%B1o_de_videojuegos
+
+== Recursos
+- #link(
+    "https://www.udit.es/el-manifiesto-del-game-designer-por-que-tu-juego-necesita-un-game-design-document-gdd-y-como-crearlo-como-los-profesionales/",
+  )[Estructura profesional de un GDD por UDIT]
+- #link(
+    "https://es.wikipedia.org/wiki/Documento_de_dise%C3%B1o_de_videojuegos",
+  )[Documento de diseño de videojuegos - Wikipedia]
+- #link("https://youtu.be/ZKo4uRTxdCA")[Tutorial para GDDs por Alva Mayo]
+- #link(
+    "https://gamescrye.com/resources/game-design-documents/#:~:text=See%20How%20Others%20Built%20Their%20Games.%20We're,An%20Ant's%20Life.%20PC.%202009.%20BooH.%20PC",
+  )[Ejemplos de GDD (en inglés)]
+
+== Juegos mencionados
+#{
+  import "games.typ": *
+  for (nombre, detalle) in lista_juegos [
+    - #link(juegos_links.at(nombre))[#nombre] #detalle
+  ]
+}
