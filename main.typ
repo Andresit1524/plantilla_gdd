@@ -278,16 +278,54 @@ Puedes incluirlos si son lo suficientemente relevantes o únicos para la identid
 == 4. Contenido
 
 === Mecánicas
+¿Qué puede hacer el jugador en el juego? Describe brevemente las mecánicas principales que componen el juego, normalmente en términos de verbos/acciones. Las mecánicas son el corazón de tu juego, aunque no sean algo innovador en sí mismo, quizás la combinación de mecánicas o la idea detrás de ellas sí.
+
+#example(source: [Hollow Knight])[
+  En Hollow Knight puedes explorar el mundo, adquirir habilidades, mejorar las herramientas y habilidades de tu personaje y pelear contra enemigos y jefes.
+]
 
 === Estilo artístico
+El estilo artístico de tu juego es la forma en la que se ve. Puede ser arte vectorial, _low poly_, _pixel art_, ilustrado, realista, entre otros. Es recomendable atender a estilos específicos y bien descrito, por ejemplo, no decir pixel art, sino explicar que tipo de pixel art (8-bit, Hi-res, rotoscopia-3D).
+
+#example(source: [Deltarune])[
+  Deltarune usa pixel art, pero no basta decir eso. Sigue una técnica tradicional, resolución baja-media y un estilo dinámico y moderno, sin dejar de lado sus raíces retro.
+
+  Si lo comparas con Undertale, del mismo autor, notarás que sus estilos ya son significativamente diferentes. Por eso es importante hacer especificación sobre que tipo de arte queremos.
+]
 
 === Música y sonido
+¿Qué estilo musical se utilizará en el juego? ¿Cómo influye la música en otros aspectos del juego? ¿Cómo contribuye la música y el sonido a la experiencia del jugador?
+
+#example(source: [Devil May Cry])[
+  La música de Devil May Cry es activa y emocionante, generando en el jugador un sentimiento de “adrenalina” que lo incentiva a querer luchar con los enemigos y destruirlos utilizando combos.
+]
 
 === Mundo y escenarios
+¿En qué mundo se desarrolla el juego? ¿Cuáles son las características de este mundo? ¿Cuáles son los acontecimientos principales que distinguen el mundo en que se presenta el juego? Además de la construcción del mundo, también puede ser adecuado añadir transfondo o _lore_, aunque también puede ir en la historia más adelante.
+
+Evita incluir detalles demasiado específicos o irrelevantes.
+
+#example(source: [Devil May Cry 3])[
+  En Devil May Cry 3, estás en un universo donde existen los demonios y los humanos. En este mundo, el antiguo demonio Sparda selló la puerta que está entre el mundo humano y el de los demonios. En el juego, uno de los dos hijos que tuvo Sparda con una humana, Vergil, en busca de más poder, trata de abrir de nuevo la puerta al mundo demoníaco y su hermano gemelo, Dante, decide detenerlo.
+]
 
 === Historia
+¿Cuáles son los puntos principales de la historia que se va a contar en el juego?
+
+#example(source: [God of War (2004)])[
+  En God of War se cuenta la historia de Kratos, un guerrero espartano que le vendió su alma al dios de la guerra, Ares, en un enfrentamiento contra otro ejército. Sin embargo, al vender su alma, Kratos acaba asesinando a su familia por una trampa de Ares, convirtiéndose en el Fantasma de Sparta. Kratos decide seguir órdenes de los dioses para que los mismos le borren los recuerdos de su familia.
+
+  En el juego, Kratos se embarca en una misión para obtener la caja de Pandora con el fin de derrotar a Ares a petición de los dioses. Luego de algunos giros de trama, Kratos acaba enfrentándose a Ares, y al matarlo, se convierte en el nuevo dios de la guerra.
+]
 
 === Interfaz
+¿Cómo interactúa el jugador con el juego? ¿Cómo el juego comunica información importante al jugador? Ten en cuenta controles, entradas, menús y elementos de la interfaz gráfica en general.
+
+#example()[
+  En las novelas visuales, como Doki Doki Literature Club, todo se basa en tomar algunas decisiones, realizar algunos minijuegos y dar click para continuar con los diálogos. El jugador interactúa con estas opciones de continuar un diálogo y tomar una decisión.
+
+  En Minecraft, tienes un menú de inventario, y puedes interactuar rompiendo bloques, poniéndolos, construyendo herramientas, etc. Además, en este juego tienes un indicador de vida y de salud que te indica si estás a punto de morir o si necesitas comer para no morir de hambre.
+]
 
 == 5. Referencias
 
