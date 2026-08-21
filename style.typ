@@ -5,7 +5,9 @@
 #let style(body) = {
   // Página y documento
   set document(title: [Guía para escritura de GDDs])
-  set page(background: image("assets/logo_green.png", width: 60%))
+  set page(
+    background: image("assets/logo_green.png", width: 60%),
+  )
 
   // Texto
   set text(font: "Ancizar Sans", lang: "es")
@@ -31,7 +33,13 @@
 }
 
 /// Recuadro sólido
-#let highlight(body) = rect(inset: 1em, radius: 1em, fill: green_gdd.transparentize(90%), width: 100%, body)
+#let highlight(body) = rect(
+  inset: 1em,
+  radius: 1em,
+  fill: green_gdd.transparentize(90%),
+  width: 100%,
+  body,
+)
 
 /// Ejemplo
 #let example(body, source: "") = highlight[
@@ -48,5 +56,4 @@
   }
 
   #body
-
 ]

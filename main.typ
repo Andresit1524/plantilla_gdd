@@ -3,131 +3,121 @@
 #title()
 
 = ¿Qué es un GDD?
-Un GDD (_Game Design Document_) es un documento hecho por un desarrollador o equipo de desarrolladores para describir una idea de videojuego. Su objetivo principal es comunicar la visión del proyecto a lo largo de todo el equipo, aterrizar ideas y presentar el proyecto a terceros de manera sencilla y fiable. No confundir GDD como documento con el nombre del grupo estudiantil, que también es GDD.
+Un GDD (_Game Design Document_) es un documento elaborado por un desarrollador o equipo para describir la visión e ideas de un videojuego. Su objetivo principal es comunicar la visión del proyecto a todo el equipo, aterrizar ideas y presentar el proyecto a terceros de manera sencilla y fiable. No se debe confundir el GDD como documento con el nombre del grupo estudiantil, que también es GDD.
 
-Hay dos métodos para hacer un GDD:
+Hay dos métodos para elaborar un GDD:
 
-1. *Monolítico:* Un documento tradicional, hecho en un procesador de texto. Son enciclopédicos, extensos y diseñados para la publicación en internet y la lectura intensiva. Suelen escribirse durante o después del desarrollo, y no es extraño que sean escritos por terceros y no por los propios desarrolladores.
-2. *Vivo o dinámico:* Un documento no lineal hecho en una herramienta de colaboración (HackMD, Notion, Collanote, etc.), que se actualiza junto con el desarrollo y lo asiste. Son mas adecuados a largo plazo y se acompañan de vínculos, documentos más cortos y contenidos multimedia. Se hacen al inicio o durante el desarrollo por parte de los desarrolladores y no suelen ser adecuados para publicación, pero si para consulta. *No confundir con la documentación*.
-
-Nosotros usamos ambas formas, y ambas son útiles. Pero para el *checkpoint 1* pedimos un GDD monolítico. El GDD vivo se escribe durante el desarrollo y no sigue ninguna estructura específica, aunque esta guía es igual de adecuada para ese tipo de documentos.
-
-== ¿Por qué pedimos un GDD monolítico?
-Un GDD monolítico es el que se escribe en un solo documento exhaustivo, es extenso, poco atractivo de leer, se desactualiza y no se adapta al proceso creativo de un proyecto. Entonces ¿por qué lo usamos?
-
-El propósito principal de seguir esta estructura es porque es perfecta para *argumentar tu proyecto*. Te obliga a responder preguntas mientras el GDD guarda las respuestas. Tu documento no quedará de 100 páginas, quizás unas 20 o 50 como máximo. Eso es perfectamente legible en la práctica, así que no es un archivo infinito e inútil; es un documento accesible y orientado a la planificación.
-
-En todo caso es recomendable solo hacer un GDD monolítico dentro de un tiempo y extensión razonables, y antes de empezar el proyecto. Si inicias el desarrollo, pasa tu GDD a un formato dinámico que te permita iterarlo y adaptarlo a tus avances.
-
-== Estructura para GDDs
-#highlight[
-  #columns(2)[
-    #set text(fill: red.darken(20%))
-    === Estructura vieja
-    1. *Datos generales*
-      - Resumen/Gancho
-      - Género
-      - Audiencia objetivo
-      - Plataformas
-      - Herramientas
-    + *Diseño general*
-      - Experiencia del jugador
-      - Pilares de diseño
-      - Puntos de venta únicos (USPs)
-    + *Diseño detallado*
-      - Mecánicas
-      - Estilo artístico
-      - Escenario/Mundo
-      - Historia
-      - Interfaz
-      - Música/sonido
-      - Game loop
-      - Progresión
-      - Sistemas
-    + *Referencias* \
-    + *Anexos*
-
-    #colbreak()
-
-    #set text(fill: black)
-    === Estructura nueva
-    1. *Resumen*
-      - Sinopsis
-      - Género
-      - Público objetivo
-    + *Desarrollo*
-      - Herramientas a usar
-      - Plataformas objetivo
-      - Flujo de trabajo
-    + *Diseño*
-      - Pilares de diseño
-      - Puntos de venta únicos (USPs)
-      - Experiencia del jugador
-      - Game loop
-      - Progresión
-      - Sistemas
-    + *Contenido*
-      - Mecánicas
-      - Estilo artístico
-      - Música y sonido
-      - Mundo y escenarios
-      - Historia
-      - Interfaz
-    + *Referencias*
-      - Inspiraciones
-      - Contenido preliminar
-      - Anexos
+#columns(2)[
+  #figure[
+    #rect(width: 70%, height: 100pt)
   ]
+
+  *Monolítico:*
+
+  - Un documento tradicional, redactado en un procesador de texto
+  - Son enciclopédicos, extensos y están diseñados para su publicación en internet y una lectura detallada
+  - Suelen escribirse durante o después del desarrollo, y no es raro que sean redactados por terceros en lugar de los propios desarrolladores
+
+  #colbreak()
+
+  #figure[
+    #rect(width: 70%, height: 100pt)
+  ]
+
+  *Vivo o dinámico:*
+
+  - Un documento no lineal creado en una herramienta colaborativa (HackMD, Notion, Collanote, etc.)
+  - Se actualiza a la par del desarrollo y sirve de apoyo y consulta
+  - Se acompañan de enlaces, documentos breves y contenido multimedia
+  - Se elaboran al inicio o durante el desarrollo por parte de los mismos desarrolladores
+  - *No confundir con la documentación técnica*
 ]
 
-=== ¿Y lo que falta?
-- Mecánicas principales vs secundarias: va en *Mecánicas*
-- Game feel: va en *Experiencia del jugador*
-- Curva de dificultad y ritmo del juego: va en *Progresión*
-- Recompensas y economía: va en *Sistemas*
-- Estilo narrativo: va en *Mecánicas* o como explicación a lo largo del documento
-- Personajes: van en la *Historia*
-- Tutoriales o aprendizaje del jugador: va en *Experiencia del jugador*
-- Flujo del usuario: va en *Interfaz* o se intuye del resto del documento
-- Roadmap de desarrollo para el semestre: *no va en un GDD*
-- Requerimientos técnicos para el juego: *difícil de dimensionar y poco relevante*
-- Investigación de mercado: va como justificación/análisis en *Puntos de venta únicos*
+Nosotros usamos ambas formas, y ambas son útiles. Sin embargo, para el *checkpoint 1* solicitamos un GDD monolítico. El GDD vivo se redacta durante el desarrollo y no sigue una estructura fija, aunque esta guía resulta igualmente útil para ese tipo de documentos.
 
-// Estos sí faltan
+== ¿Por qué pedimos un GDD monolítico?
+Un GDD monolítico se redacta en un solo documento exhaustivo; suele ser extenso, poco atractivo de leer, tiende a desactualizarse y no siempre se adapta al proceso creativo de un proyecto. Entonces, ¿por qué lo utilizamos?
 
-// - Contenido planeado para MVP
-// - Alcance planeado
+La razón principal para seguir esta estructura es que resulta perfecta para *argumentar tu proyecto*. Te obliga a responder preguntas clave mientras el GDD registra las respuestas. Tu documento no tendrá 100 páginas; probablemente constará de unas 20 a 50 como máximo. Esto es perfectamente manejable en la práctica, por lo que no es un archivo infinito e inútil, sino un documento accesible y orientado a la planificación.
 
-Veremos más adelante qué cosas sí van en el GDD, además de esto.
+En todo caso, se recomienda elaborar un GDD monolítico en un tiempo y extensión razonables antes de iniciar el proyecto. Una vez comiences el desarrollo, puedes migrar tu GDD a un formato dinámico que te permita iterar y adaptarlo a tus avances.
+
+#highlight[
+  #align(center)[
+    == Estructura de un GDD
+  ]
+  Esta estructura la discutiremos a lo largo del resto del documento. Los puntos que contiene esta guía son los siguientes.
+
+  1. *Resumen*
+    - Sinopsis
+    - Género
+    - Público objetivo
+  + *Desarrollo*
+    - Herramientas a usar
+    - Plataformas objetivo
+    - Flujo de trabajo // TODO: Opcional para proyectos nuevos
+  + *Diseño*
+    - Pilares de diseño
+    - Identidad y puntos clave
+    - Experiencia del jugador
+    - Game loop
+    - Progresión
+    - Sistemas // TODO: Opcional para proyectos nuevos
+  + *Contenido*
+    - Mecánicas
+    - Aprendizaje del jugador
+    - Estilo artístico
+    - Música y sonido
+    - Mundo y escenarios
+    - Historia y personajes
+    - Interfaz
+  + *Referencias*
+    - Inspiraciones
+    - Investigación de mercado // TODO: Opcional para proyectos nuevos
+    - Contenido preliminar // TODO: Opcional para proyectos nuevos
+    - Anexos (opcional)
+
+  === Cosas que no van en este GDD
+  - Requerimientos técnicos para el juego: *difícil de dimensionar y poco relevante*
+  - Contenido planeado para MVP (va en la documentación)
+  - Alcance planeado (no es relevante, suerte)
+  - Cronogramas (siempre se incumplen y desactualizan)
+]
 
 #pagebreak()
 
 = Contenido de un GDD
-La estructura que recomendamos consiste en 5 secciones: resumen, desarrollo, diseño, contenido y referencias. Cada una busca resolver un frente diferente y generar una visión completa sobre tu proyecto. Es importante destacar que un GDD *no es documentación*, por lo tanto, los detalles finos y de implementación no van en el documento. Un GDD es para características esenciales del proyecto.
+La estructura que recomendamos consta de 5 secciones: resumen, desarrollo, diseño, contenido y referencias. Cada una busca abordar un aspecto diferente y ofrecer una visión integral de tu proyecto. Es fundamental destacar que un GDD *no es documentación técnica*; por lo tanto, los detalles minuciosos e implemantaciones específicas no van en este documento. Un GDD se enfoca en las características esenciales del proyecto.
+
+// ! FALTANTES
+// - Mecánicas principales vs. secundarias: va en *Mecánicas*
+// - Curva de dificultad y ritmo del juego: va en *Progresión*
+// - Estilo narrativo (diálogos, cinemáticas, ...): va en *Mecánicas* o como explicación a lo largo del documento
+// - Flujo del usuario: va en *Interfaz* o se intuye del resto del documento
 
 == 1. Resumen
 
 === Sinopsis
-Un resumen en 1 o 2 frases que explique por qué tu juego es divertido o interesante. Como si lo fueras a poner en la descripción para Steam o explicarlo a un amigo, por ejemplo.
+Un resumen de 1 o 2 frases que explique por qué tu juego es divertido o interesante; por ejemplo, como si lo fueras a incluir en la descripción de Steam o a explicárselo a un amigo.
 
 #example(source: [Expedition 33 en Steam])[
   _"Guía a la expedición 33 en su misión de acabar con la Pintora para que no vuelva a pintar la muerte. Explora un mundo inspirado en la Francia de la Belle Époque y lucha contra rivales únicos en este juego de rol por turnos con mecánicas en tiempo real."_
 ]
 
 === Género
-¿Cuál es el género de tu videojuego? Esto suele decidir directamente una gran cantidad de características y lo enmarca en un tipo de juego específico. En #link("https://en.wikipedia.org/wiki/List_of_video_game_genres")[Wikipedia (inglés)] encuentras una lista para que te guíes. Un juego puede tener más de un género a la vez.
+¿Cuál es el género de tu videojuego? Esto define directamente una gran cantidad de características y lo enmarca en una categoría específica. En #link("https://en.wikipedia.org/wiki/List_of_video_game_genres")[Wikipedia (inglés)] encontrarás una lista que te servirá de guía. Un juego puede pertenecer a más de un género a la vez.
 
 #example(source: [Grand Theft Auto V])[
-  GTA V (y toda la saga _Grand Theft Auto_) es un juego de acción, aventura y mundo abierto. Es común que la acción y aventura vayan juntos, de hecho.
+  GTA V (y toda la saga _Grand Theft Auto_) es un juego de acción, aventura y mundo abierto. De hecho, es común que la acción y la aventura vayan de la mano.
 ]
 
 === Público objetivo
-Tu juego *jamás* será para todos. Definir qué tipo de persona quieres que juegue tu juego te ayudará a comprender qué necesitas hacer. Describe motivaciones, gustos, edades, géneros, e incluso inspiraciones y características que puedan guiar a las personas indicadas a jugar tu juego.
+Tu juego *jamás* será para todo el mundo. Definir qué tipo de persona quieres que juegue tu juego te ayudará a comprender qué decisiones debes tomar. Describe motivaciones, gustos, edades, géneros, e incluso inspiraciones y características que atraigan a las personas indicadas.
 
-Tu público objetivo no es estricto: técnicamente cualquiera puede jugar tu juego, pero no a todos les va a gustar. Esto último está fuera de tu público objetivo. Además, el público objetivo define claramente quiénes no deberían jugar. Un juego +18 no debe ser jugado por menores de edad, mientras que un juego para preescolares es completamente inadecuado o irrelevante para adultos.
+Tu público objetivo no es algo estricto: técnicamente cualquiera podría jugar tu título, pero no a todos les va a gustar (estos últimos quedan fuera de dicho público). Asimismo, el público objetivo aclara quiénes no deberían jugar. Un juego +18 no debe ser jugado por menores de edad, mientras que uno enfocado en preescolares resulta inadecuado o irrelevante para adultos.
 
 #example(source: [Minecraft])[
-  Minecraft es uno de los videojuegos más universales de los tiempos modernos. Pero no le impide limitar su público objetivo a:
+  Minecraft es uno de los videojuegos más universales de la actualidad. Sin embargo, eso no le impide delimitar su público objetivo a:
 
   - Mayores de 8 años (especialmente entre 12 y 24 años)
   - Personas que destacan por ser creativas y resilientes
@@ -137,7 +127,7 @@ Tu público objetivo no es estricto: técnicamente cualquiera puede jugar tu jue
 == 2. Desarrollo
 
 === Herramientas a usar
-¿Qué herramientas, apps, o software será utilizado para producir el juego? Estos abarcan:
+¿Qué herramientas, aplicaciones o software se utilizarán para producir el juego? Esto abarca:
 
 - Motor de videojuegos y lenguajes de programación
 - IDE/Editor de texto y código
@@ -146,91 +136,80 @@ Tu público objetivo no es estricto: técnicamente cualquiera puede jugar tu jue
 - Ilustración
 - Herramientas de productividad
 - Editores de audio
-- Librerías o software propio, si es el caso
+- Librerías o software propio, si aplica
 
-Existen algunas obviedades que puedes omitir para esta sección:
+Existen algunas obviedades que puedes omitir en esta sección:
 
-- Git para control de versiones. Es menos obvio usar otra cosa, eso sí
-- WhatsApp y Discord para comunicaciones. Es el canal que todos usamos
+- Git para control de versiones (lo menos obvio sería usar otra cosa)
+- WhatsApp y Discord para comunicación (son los canales habituales)
 
 #example(source: [Slay the Spire 2])[
-  Slay the Spire 2 fue hecho en Unity + C\# y luego migrado a Godot + C\#. También se usaron librerías propietarias de Mega Crit. No parece haber mejor información sobre el resto de herramientas usadas, y de hecho puedes elegir las que quieras.
+  Slay the Spire 2 fue desarrollado en Unity + C\# y luego migrado a Godot + C\#. También se utilizaron librerías propietarias de Mega Crit. No hay información más detallada sobre el resto de herramientas usadas; en tu caso, puedes elegir las que consideres adecuadas.
 ]
 
 === Plataformas objetivo
-¿En qué plataformas y dispositivos estará disponible el juego? Cada plataforma es un mercado, un público objetivo, unas necesidades a resolver y un estilo que seguir, todas completamente diferentes, por lo que influye mucho en lo que tu juego puede ser y tener. Por ejemplo un juego competitivo o de paga seguramente no es adecuado para teléfonos, mientras que uno hipercasual no es muy adecuado para consolas. Cada plataforma es un paradigma de juego diferente.
+¿En qué plataformas y dispositivos estará disponible el juego? Cada plataforma representa un mercado, un público objetivo, necesidades particulares y un estilo propio. Esto influye de manera determinante en lo que tu juego puede ofrecer. Por ejemplo, un juego competitivo o de pago probablemente no sea el más adecuado para teléfonos móviles, mientras que uno hipercasual no se adapta bien a consolas. Cada plataforma implica un paradigma de juego distinto.
 
-#example(source: [Undertale])[
-  Undertale fue lanzado oficialmente para:
+#example(source: [HALO: Combat Evolved])[
+  HALO: Combat Evolved fue lanzado oficialmente para:
 
+  - Xbox
   - Windows
-  - macOS
-  - Linux (SteamOS)
-  - Nintendo Switch y Switch 2
-  - Steam Deck
-  - Xbox One y Series X y S
-  - Playstation 4 y Vita
+  - macOS X
 ]
 
-#pagebreak()
-
 === Flujo de trabajo
-¿Cuál es la forma en la que van a trabajar como equipo/individuo? ¿Cuáles son sus prioridades? ¿Pruebas rápidas, feedback, repartición de roles? Definir esto les puede despejar dudas para evitar atorarse como grupo.
+¿De qué manera van a trabajar como equipo o individuo? ¿Cuáles son sus prioridades (pruebas rápidas, retroalimentación, distribución de roles)? Definir esto permite despejar dudas y evitar bloqueos en el grupo.
 
-// TODO: usar 'Mecha Chamaleon' si es más pertinente
 #example(source: [Deltarune])[
-  Deltarune es desarrollado principalmente sobre el prototipado e ideas de Toby Fox, refinado por Temmie Chang e implementado/asistido por Toby más otros desarrolladores, algunos de #link("https://8-4.jp/")[8-4] para la versión japonesa y de consolas.
+  Deltarune se desarrolla principalmente a partir del prototipado y las ideas de Toby Fox, refinadas por Temmie Chang e implementadas con la asistencia de Toby y otros desarrolladores (algunos de ellos pertenecientes a #link("https://8-4.jp/")[8-4] para las versiones de consolas y en japonés).
 
-  Por lo que conocemos, parece involucrar un trabajo fino y directo hacia el contenido final. Sin iteración masiva, o feedback de su comunidad.
+  Por lo que se conoce, su proceso implica un trabajo directo y detallado enfocado en el contenido final, sin iteraciones masivas ni retroalimentación directa de la comunidad.
 ]
 
 == 3. Diseño
 
 === Pilares de diseño
-¿Qué rige el desarrollo de tu juego? Como si fuesen mandamientos para el grupo, los pilares de diseño son principios simples y claros que deben dirigir tu desarrollo. A diferencia del contenido, los pilares de diseño no suelen cambiar durante todo el desarrollo, y plasman las ambiciones, filosofía y necesidades de tu equipo y el proyecto.
+¿Qué rige el desarrollo de tu juego? Como si fuesen mandamientos para el equipo, los pilares de diseño son principios simples y claros que orientan el desarrollo. A diferencia del contenido, los pilares de diseño no suelen cambiar a lo largo del proyecto, y plasman las ambiciones, la filosofía y las necesidades de tu equipo.
 
-Los pilares de diseño son útiles para contrastar y dirigir decisiones, evitando perder el rumbo o arruinar el proyecto con ideas incompatibles. Definirlos al principio también aterriza los objetivos del grupo y la forma en la que trabajarán.
+Los pilares de diseño son útiles para evaluar y guiar decisiones, evitando perder el rumbo o arruinar el proyecto con ideas incompatibles. Definirlos desde el principio ayuda a concretar los objetivos del grupo y la forma en que trabajarán.
 
-Los pilares de diseño pueden ser de dos tipos: prácticos, para decidir cómo debe ser la jugabilidad y el contenido; y filosóficos, para decidir cómo el equipo debe pensar sobre tu proyecto. Se recomiendan entre 3 y 5 principios bien explicados, de cualquier tipo o combinación de ellos.
+Estos pilares pueden ser de dos tipos: prácticos (para orientar la jugabilidad y el contenido) y filosóficos (para definir la mentalidad del equipo respecto al proyecto). Se recomiendan entre 3 y 5 principios bien explicados, combinando ambos enfoques si se desea.
 
 #example(source: [Hades])[
-  Hades, de Supergiant Games, se guía por la fusión entre los roguelikes implacables con la narrativa progresiva y dinámica. Sus principios son principalmente prácticos:
+  Hades, de Supergiant Games, se fundamenta en la fusión entre los roguelikes exigentes y una narrativa progresiva y dinámica. Sus principios son principalmente prácticos:
 
   - Usar el fracaso como motor de la narrativa
   - Minimizar el contenido repetitivo
   - Combate rápido, frenético y súper dinámico
-  - Aspecto eléctrico y dinámico
+  - Estética llamativa y dinámica
   - Música adaptativa e inmersiva
 ]
 
-#pagebreak()
+=== Identidad y puntos clave
+¿Qué es lo que hace único tu juego? Plantear estos puntos de manera estricta no es obligatorio, pero resulta esencial para destacar y aportarle personalidad al proyecto.
 
-=== Puntos de venta únicos (USPs)
-Un punto de venta único (_Unique Selling Points_, USP) es un elemento de tu juego que lo hace único. Plantear estos puntos para tu juego no es obligatorio, pero puede ser esencial para destacar y darle personalidad a tu proyecto.
-
-Antes de plasmarlos, evita hacer plagio y consulta el mercado actual en búsqueda de novedades. También es relevante que los USPs tengan algo de tu estilo o personalidad, así puedes interiorizar mejor tu idea y facilitar el ejercicio de la creatividad.
+Antes de definirlos, evita el plagio e investiga el mercado actual en busca de novedades. También es importante que reflejen parte de tu estilo o sello personal, lo cual facilita interiorizar la idea y potenciar la creatividad.
 
 #example(source: [Índigo Park: Chapter 1])[
-  Índigo Park es un juego de _horror de mascotas_ (como FNAF) creado por Mason Myers (_UniqueGeese_). Uno de sus USPs es que tienes a una mascota de tu lado que guía tu experiencia, Rambley; además, tiene una historia relevante para el juego y te la cuenta él con una ternura contrastante. Esto subvierte su género, que suele tener a todos los personajes como enemigos, sin contexto y sin mayor atractivo que los _screamers_ o un lore cuestionable.
+  Índigo Park es un juego de _horror de mascotas_ (al estilo FNAF) creado por Mason Myers (_UniqueGeese_). Uno de sus puntos más identitarios es contar con una mascota aliada que guía tu experiencia, Rambley; además, posee una historia relevante expresada con una ternura que contrasta con el ambiente. Esto subvierte las convenciones del género, donde los personajes suelen ser exclusivamente enemigos sin contexto ni más atractivo que los _screamers_ o un trasfondo confuso.
 ]
 
 === Experiencia del jugador
-¿Qué experiencia se espera generar en el jugador durante todo el juego? ¿Qué fantasía queremos alimentar en el jugador? Usualmente, la experiencia deseada se puede explicar como:
+¿Qué experiencia se busca generar en el jugador a lo largo del juego? ¿Qué fantasía queremos transmitirle? Usualmente, la experiencia deseada se puede definir como:
 
-- Transmitir una sensación o emoción
-- Ser/personificar a un personaje
-- Hacer una actividad en particular
+- Transmitir una emoción o sensación específica
+- Hacer que el jugador personifique a un personaje
+- Diseñar una actividad o dinámica particular
 
 #example(source: [Undertale])[
-  Undertale es bien conocido por subvertir los RPGs al introducir el concepto de perdón y poder de decisión a lo largo de la historia. La experiencia aboga por sentir valor en tus acciones y actuar de corazón más que por "piloto automático para jugar RPGs".
+  Undertale es reconocido por subvertir los RPGs tradicionales al introducir el concepto del perdón y la relevancia de las decisiones. La experiencia busca otorgar valor a tus acciones y apelar a la empatía, en lugar de invitar a jugar en "piloto automático".
 ]
 
-#pagebreak()
-
 === Game loop
-Un _game loop_ es un diagrama en bucle o explicación que describe el núcleo de las mecánicas del jugador, y el orden y posibilidades en las que el jugador hace sus acciones. Esto se considera diseño, y no contenido, debido a que el game loop no depende del contenido, y en cambio, lo dirige.
+Un _game loop_ es un diagrama en bucle o una explicación que describe el núcleo de las mecánicas y el orden en que el jugador realiza sus acciones. Esto se considera diseño (y no contenido) porque el _game loop_ no depende del contenido, sino que lo rige.
 
-El game loop está estrechamente relacionado con el género de tu videojuego, así que puedes empezar consultando el game loop típico de los géneros que abarca tu proyecto, y luego adaptándolo a tu gusto o necesidad. Puedes hacer los diagramas en Mermaid, Miro, Canva o la herramienta de tu gusto. O explicarlo en texto si es más adecuado.
+El _game loop_ está estrechamente relacionado con el género de tu videojuego; por ello, puedes empezar revisando la estructura típica de dicho género y adaptarla a tus necesidades. Puedes elaborar los diagramas en Mermaid, Miro, Canva o la herramienta que prefieras, o bien explicarlo mediante texto si resulta más claro.
 
 #example[
   Los juegos de disparos/FPS (como Fortnite) suelen compartir el mismo bucle básico:
@@ -239,107 +218,146 @@ El game loop está estrechamente relacionado con el género de tu videojuego, as
     #image("assets/game_loop.png", width: 50%)
   ]
 
-  Otras acciones como áreas seguras o _loot_ dependen del juego.
+  Otras dinámicas, como las zonas seguras o el botín (_loot_), dependen del juego en particular.
 ]
 
 === Progresión
-¿Cómo progresa el jugador en tu juego? ¿Cuáles son sus objetivos a corto y largo plazo? ¿Están estos objetivos alineados con la fantasía que se quiere transmitir? Igual que el game loop, esto se suele definir con base en el género que elegiste.
+¿Cómo avanza el jugador en tu juego? ¿Cuáles son sus objetivos a corto y largo plazo? ¿Están alineados con la fantasía que deseas transmitir? Al igual que el _game loop_, la progresión suele definirse con base en el género seleccionado.
 
-Por supuesto, la progresión depende también del contenido y la historia de tu juego, aunque no lo define _per se_.
+Por supuesto, la progresión también se vincula al contenido y a la narrativa del juego, aunque no los determina _per se_.
+
+// TODO: mejorar
 
 #example(source: [Saga Pokémon])[
-  En Pokémon, tus objetivos a corto plazo son conseguir medallas y mejorar a tus Pokémon, todo con el fin de acercarte a derrotar al Alto Mando y luego, al campeón de la región.
+  En Pokémon, los objetivos a corto plazo consisten en obtener medallas y fortalecer a tu equipo, con el fin supremo de enfrentar al Alto Mando y al campeón de la región.
 ]
 
 === Sistemas
-¿Qué sistemas posee tu juego? ¿Cómo impactan o dirigen la experiencia del jugador? Los sistemas suelen abarcar:
+¿Qué sistemas incluye tu juego y cómo impactan en la experiencia del jugador? Los sistemas suelen abarcar:
 
-- Economía y manejo de recursos
-- Rangos, escalas y puntajes
-- *Funcionamiento* de mecánicas clave. El _contenido_ y contexto de esas mecánicas va más adelante
+- Economía y gestión de recursos
+- Clasificaciones, escalas y puntuaciones
+- Sistemas de batalla, combate, para la acción en general
 
-No debes incluir implementaciones ni detalles finos de los sistemas (ej: fórmulas del sistema Elo o precios de artículos clave), pues no son relevantes. Esos van en la documentación del proyecto, y acá solo explicas cómo funcionan y por qué son importantes.
+No es necesario incluir implementaciones técnicas ni detalles minuciosos (como las fórmulas matemáticas del sistema Elo o los precios de artículos específicos), ya que no son relevantes en este punto. Esos detalles corresponden a la documentación técnica; aquí solo debes explicar cómo funcionan y por qué son importantes.
 
-Algunos ejemplos triviales que puedes omitir:
+Algunos ejemplos evidentes que se pueden omitir:
 
-- Interfaz de usuario (asumimos que todos los juegos tienen esto)
-- Sistemas de la implementación (ej: Sistema de programación con _Blueprints_)
-- Sistema de movimiento para personajes (un poco obvio)
+- Interfaz de usuario (es obvio y va más adelante)
+- Sistemas de la implementación/motor (ej.: uso de _GameObjects_ de Unity)
+- Sistemas indispensables (movimiento, guardado-carga)
 
-Puedes incluirlos si son lo suficientemente relevantes o únicos para la identidad de tu juego, pero si son sistemas comunes o esenciales a cualquier juego, mejor omitirlos.
+Puedes incluirlos si son especialmente innovadores o identitarios para tu juego; de lo contrario, es recomendable omitirlos.
 
-#example(source: [Ajedrez])[
-  El ajedrez tiene su característico sistema Elo, pero no es muy adecuado explicar la fórmula, sino los conceptos claves del sistema y cómo impacta a los jugadores: en este caso, el Elo se usa para armar partidas y clasificar jugadores.
+#example(source: [Geometry Dash])[
+  Geometry Dash contiene (y destaca) por estos sistemas:
 
-  Por otro lado, explicar las reglas del ajedrez como un sistema sería irrelevante, aunque para un videojuego (y uno nuevo) quizá no es el caso.
+  - Creación y jugar de niveles con música de Newgrounds o propia
+  - Dos modos de juego: normal y plataforma (desde la 2.2)
+  - Personalización de los vehículos
+  - Monedas, gemas, estrellas, llaves... todas con sus propios usos
+  - _Gaunlets_ y _map packs_
 ]
+
+#pagebreak()
 
 == 4. Contenido
 
 === Mecánicas
-¿Qué puede hacer el jugador en el juego? Describe brevemente las mecánicas principales que componen el juego, normalmente en términos de verbos/acciones. Las mecánicas son el corazón de tu juego, aunque no sean algo innovador en sí mismo, quizás la combinación de mecánicas o la idea detrás de ellas sí.
+¿Qué acciones puede realizar el jugador? Describe brevemente las mecánicas principales en términos de verbos o acciones. Las mecánicas son el núcleo de tu juego; aunque de forma individual no sean totalmente innovadoras, la combinación entre ellas o su enfoque sí puede serlo.
 
-#example(source: [Hollow Knight])[
-  En Hollow Knight puedes explorar el mundo, adquirir habilidades, mejorar las herramientas y habilidades de tu personaje y pelear contra enemigos y jefes.
+// TODO: mejorar la explicación
+
+#example(source: [Undertale])[
+  En Undertale (y Deltarune) destacan:
+
+  - El sistema de piedad (LOVE) que altera la historia y cuestiona el jugador
+  - El _bullet hell_ (esquivar balas con patrones) heredado de TouHou, en este caso con la alma (corazón)
+  - Una historia con sus rutas basada en las acciones del jugador
+]
+
+=== Aprendizaje del jugador
+// ! Contenido
+
+#example(source: [Mario Bros.])[
+  Mario Bros. no tiene tutorial. En cambio, te pone en el primer nivel, con la capacidad de progresar adecuadamente por los obstáculos posibles (Gumbas, plataformas, Koopas, huecos, plantas) y las mecánicas (bloques especiales, pisar gumbas, entrar en tubos), etc.
 ]
 
 === Estilo artístico
-El estilo artístico de tu juego es la forma en la que se ve. Puede ser arte vectorial, _low poly_, _pixel art_, ilustrado, realista, entre otros. Es recomendable atender a estilos específicos y bien descritos, por ejemplo, no decir pixel art, sino explicar qué tipo de pixel art (8-bit, Hi-res, rotoscopia-3D).
+El estilo artístico define el aspecto visual del juego. Puede ser arte vectorial, _low poly_, _pixel art_, ilustrado, realista, entre otros. Se recomienda especificar el estilo en detalle (por ejemplo, no basta con decir *pixel art*, sino detallar si es 8-bit, Hi-res o rotoscopia 3D).
 
 #example(source: [Deltarune])[
-  Deltarune usa pixel art, pero no basta decir eso. Sigue una técnica tradicional, resolución baja-media y un estilo dinámico y moderno, sin dejar de lado sus raíces retro.
+  Deltarune utiliza _pixel art_, pero es necesario ser más preciso. Sigue una técnica tradicional, con resolución baja-media y un estilo dinámico y moderno que conserva sus raíces retro.
 
-  Si lo comparas con Undertale, del mismo autor, notarás que sus estilos ya son significativamente diferentes. Por eso es importante hacer especificación sobre qué tipo de arte queremos.
+  Al compararlo con Undertale (del mismo autor), notarás diferencias significativas en la dirección de arte. Por ello es importante especificar exactamente qué tipo de arte se busca.
 ]
 
 === Música y sonido
-¿Qué estilo musical se utilizará en el juego? ¿Cómo influye la música en otros aspectos del juego? ¿Cómo contribuye la música y el sonido a la experiencia del jugador?
+¿Qué estilo musical se utilizará? ¿Cómo influye la música en otros aspectos del juego y cómo contribuye a la experiencia del jugador?
 
+// TODO: mejorar la explicación
+
+// TODO: ejemplo con más esencia
 #example(source: [Devil May Cry])[
-  La música de Devil May Cry es activa y emocionante, generando en el jugador un sentimiento de “adrenalina” que lo incentiva a querer luchar con los enemigos y destruirlos utilizando combos.
+  La música de Devil May Cry es enérgica y emocionante, lo que genera en el jugador un sentimiento de adrenalina que lo motiva a combatir enemigos y realizar combos.
 ]
+
+#pagebreak()
 
 === Mundo y escenarios
-¿En qué mundo se desarrolla el juego? ¿Cuáles son las características de este mundo? ¿Cuáles son los acontecimientos principales que distinguen el mundo en que se presenta el juego? Además de la construcción del mundo, también puede ser adecuado añadir trasfondo o _lore_, aunque también puede ir en la historia más adelante.
+¿En qué mundo se desarrolla el juego y cuáles son sus características principales? ¿Qué acontecimientos marcan el contexto del entorno? Además del diseño de escenarios, se puede incluir la construcción de mundo (_worldbuilding_) o el trasfondo (_lore_), aunque este último también puede formar parte de la sección de historia.
 
-Evita incluir detalles demasiado específicos o irrelevantes.
+Procura no añadir detalles excesivamente específicos o irrelevantes.
 
 #example(source: [Devil May Cry 3])[
-  En Devil May Cry 3, estás en un universo donde existen los demonios y los humanos. En este mundo, el antiguo demonio Sparda selló la puerta que está entre el mundo humano y el de los demonios. En el juego, uno de los dos hijos que tuvo Sparda con una humana, Vergil, en busca de más poder, trata de abrir de nuevo la puerta al mundo demoníaco y su hermano gemelo, Dante, decide detenerlo.
+  Devil May Cry 3 se ambienta en un universo donde coexisten demonios y humanos. Tiempo atrás, el demonio Sparda selló el portal entre ambos mundos. En el juego, Vergil (uno de los hijos que Sparda tuvo con una humana) busca abrir nuevamente el portal para obtener más poder, mientras que su hermano gemelo, Dante, intenta detenerlo.
 ]
 
-=== Historia
-¿Cuáles son los puntos principales de la historia que se va a contar en el juego?
+=== Historia y personajes
+¿Cuáles son los puntos centrales de la narrativa del juego? ¿Quiénes son los personajes principales?
+
+// TODO: mejorar explicación
 
 #example(source: [God of War])[
-  En God of War se cuenta la historia de Kratos, un guerrero espartano que le vendió su alma al dios de la guerra, Ares, en un enfrentamiento contra otro ejército. Sin embargo, al vender su alma, Kratos acaba asesinando a su familia por una trampa de Ares, convirtiéndose en el Fantasma de Esparta. Kratos decide seguir órdenes de los dioses para que los mismos le borren los recuerdos de su familia.
+  God of War narra la historia de Kratos, un guerrero espartano que vendió su alma a Ares, dios de la guerra, para obtener la victoria en batalla. Tras ser engañado por Ares y asesinar a su propia familia, Kratos se convierte en el "Fantasma de Esparta" y decide ponerse al servicio de los dioses para liberar su mente de esos atormentadores recuerdos.
 
-  En el juego, Kratos se embarca en una misión para obtener la caja de Pandora con el fin de derrotar a Ares a petición de los dioses. Luego de algunos giros de trama, Kratos acaba enfrentándose a Ares, y al matarlo, se convierte en el nuevo dios de la guerra.
+  Durante el juego, Kratos emprende una búsqueda para obtener la caja de Pandora y derrotar a Ares por encargo de los dioses. Tras diversos giros argumentales, Kratos se enfrenta a Ares y, al vencerlo, ocupa su lugar como el nuevo dios de la guerra.
 ]
 
 === Interfaz
-¿Cómo interactúa el jugador con el juego? ¿Cómo el juego comunica información importante al jugador? Ten en cuenta controles, entradas, menús y elementos de la interfaz gráfica en general.
+¿Cómo interactúa el jugador con el juego y cómo recibe la información importante? Considera controles, dispositivos de entrada, menús y elementos gráficos generales (HUD).
 
 #example(source: [Doki Doki Literature Club & Minecraft])[
-  En las novelas visuales, como Doki Doki Literature Club, todo se basa en tomar algunas decisiones, realizar algunos minijuegos y dar clic para continuar con los diálogos. El jugador interactúa con estas opciones de continuar un diálogo y tomar una decisión.
+  En las novelas visuales como Doki Doki Literature Club, la interacción se basa en tomar decisiones, completar algunos minijuegos y hacer clic para avanzar los diálogos.
 
-  En Minecraft, tienes un menú de inventario, y puedes interactuar rompiendo bloques, poniéndolos, construyendo herramientas, etc. Además, en este juego tienes un indicador de vida y de salud que te indica si estás a punto de morir o si necesitas comer para no morir de hambre.
+  En Minecraft, por su parte, el jugador cuenta con un menú de inventario e interactúa rompiendo y colocando bloques o creando herramientas. Asimismo, dispone de indicadores visuales de salud y hambre para gestionar su supervivencia.
 ]
+
+#pagebreak()
 
 == 5. Referencias
 
 === Inspiraciones
-¿Cuáles obras te inspiran a hacer tu juego? Es común y casi inevitable que sean otros juegos, pero también pueden ser libros, películas, experiencias y mucho más. Explica en qué te inspiras y qué quieres retomar de esos proyectos. Para proyectos no muy conocidos quizá sea adecuado un link o explicación.
+¿Qué obras sirven de inspiración para tu proyecto? Con frecuencia se trata de otros videojuegos, pero también pueden ser libros, películas o experiencias personales. Explica qué elementos te inspiran y qué aspectos deseas retomar. En el caso de referentes poco conocidos, es recomendable incluir un enlace o una breve descripción.
 
 #example(source: [Beast Card Clash])[
-  #link("https://richigame.itch.io/beast-card-clash")[Beast Card Clash] es uno de los proyectos más avanzados y recientes de GDD. Está inspirado fuertemente en Jujitsu Fuego de Club Penguin, y recuerda a elementos de mundo abierto y roguelike sencillos. La estética _cozy_ que busca es familiar a juegos como _Animal Crossing_.
+  Beast Card Clash es uno de los proyectos de GDD más recientes y avanzados. Se inspira fuertemente en el minijuego Card-Jitsu Fuego de Club Penguin, combinando elementos sencillos de mundo abierto y _roguelike_. Su estética _cozy_ recuerda a títulos como _Animal Crossing_.
 ]
 
+=== Investigación de mercado
+Investiga el mercado de juegos similares al tuyo (en tiendas digitales, opiniones y otras fuentes) e indica:
+
+- ¿Qué juegos encuentras? ¿Cuáles conoces?
+- ¿Qué ves en común? Esto te ayudará a evitar temas "quemados"
+- ¿Qué sientes que le falta? Esto te dará ideas para tu proyecto
+- ¿Qué errores ves en los juegos? Así los evitas o los reformulas
+- ¿Cuán populares son estos juegos y sus géneros?
+
 === Contenido preliminar
-Aquí puedes añadir cualquier cosa que ya tengas para tu proyecto: bocetos, ideas rápidas de contenido, evidencias de un prototipo, etc.
+Sección para incluir el material existente del proyecto: bocetos, ideas iniciales de contenido, capturas o pruebas de un prototipo, links, etc.
 
 === Anexos (opcional)
-Cualquier nota o elemento que quieras añadir y que no sea de ninguna categoría del documento va acá.
+Notas adicionales o elementos que no encajen en las categorías anteriores.
 
 #pagebreak()
 
