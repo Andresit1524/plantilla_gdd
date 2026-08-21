@@ -1,15 +1,22 @@
 #import "/style.typ": *
 #show: style
+
 #title()
 
-= ¿Qué es un GDD?
+#align(center)[
+  #set text(fill: green_gdd_dark)
+  GDD Colombia. Escrito por #link("https://github.com/Andresit1524")[Andrés López] y #link("https://instagram.com/wolfy_eliteg")[Daniel Durán]
+]
+
+#divider()
+
 Un GDD (_Game Design Document_) es un documento elaborado por un desarrollador o equipo para describir la visión e ideas de un videojuego. Su objetivo principal es comunicar la visión del proyecto a todo el equipo, aterrizar ideas y presentar el proyecto a terceros de manera sencilla y fiable. No se debe confundir el GDD como documento con el nombre del grupo estudiantil, que también es GDD.
 
 Hay dos métodos para elaborar un GDD:
 
 #columns(2)[
-  #figure[
-    #rect(width: 70%, height: 100pt)
+  #align(center)[
+    #image("assets/guion_gta_v.png", height: 10em, fit: "contain")
   ]
 
   *Monolítico:*
@@ -20,8 +27,8 @@ Hay dos métodos para elaborar un GDD:
 
   #colbreak()
 
-  #figure[
-    #rect(width: 70%, height: 100pt)
+  #align(center)[
+    #image("assets/notion_stewart.png", height: 10em, fit: "contain")
   ]
 
   *Vivo o dinámico:*
@@ -55,14 +62,14 @@ En todo caso, se recomienda elaborar un GDD monolítico en un tiempo y extensió
   + *Desarrollo*
     - Herramientas a usar
     - Plataformas objetivo
-    - Flujo de trabajo // TODO: Opcional para proyectos nuevos
+    - Flujo de trabajo #optional-for-newbies
   + *Diseño*
     - Pilares de diseño
     - Identidad y puntos clave
     - Experiencia del jugador
     - Game loop
     - Progresión
-    - Sistemas // TODO: Opcional para proyectos nuevos
+    - Sistemas #optional-for-newbies
   + *Contenido*
     - Mecánicas
     - Aprendizaje del jugador
@@ -73,8 +80,8 @@ En todo caso, se recomienda elaborar un GDD monolítico en un tiempo y extensió
     - Interfaz
   + *Referencias*
     - Inspiraciones
-    - Investigación de mercado // TODO: Opcional para proyectos nuevos
-    - Contenido preliminar // TODO: Opcional para proyectos nuevos
+    - Investigación de mercado #optional-for-newbies
+    - Contenido preliminar #optional-for-newbies
     - Anexos (opcional)
 
   === Cosas que no van en este GDD
@@ -158,8 +165,13 @@ Existen algunas obviedades que puedes omitir en esta sección:
   - macOS X
 ]
 
-=== Flujo de trabajo
-¿De qué manera van a trabajar como equipo o individuo? ¿Cuáles son sus prioridades (pruebas rápidas, retroalimentación, distribución de roles)? Definir esto permite despejar dudas y evitar bloqueos en el grupo.
+=== Flujo de trabajo #optional-for-newbies
+¿De qué manera van a trabajar como equipo o individuo? ¿Cuáles son sus prioridades (pruebas rápidas, retroalimentación, distribución de roles)? Definir esto permite despejar dudas y evitar bloqueos en el grupo. Algunas nociones que se pueden discutir son:
+
+- Repartición de tareas y manejo del proyecto: ¿Quién hace quién? ¿Todos tienen acceso a todo? ¿Como fluyen los archivos de una persona hasta el producto final?
+- Integración del trabajo ¿Como implementan todo? ¿Como evitan/solucionan conflictos?
+- Forma de iteración: ¿Iteran rápido o se esfuerzan en un solo intento hasta que quede bien? ¿Qué hacen con los prototipos?
+- Manejo del feedback: ¿Piden retroalimentación a terceros? ¿Como se gestiona la opinión del equipo?
 
 #example(source: [Deltarune])[
   Deltarune se desarrolla principalmente a partir del prototipado y las ideas de Toby Fox, refinadas por Temmie Chang e implementadas con la asistencia de Toby y otros desarrolladores (algunos de ellos pertenecientes a #link("https://8-4.jp/")[8-4] para las versiones de consolas y en japonés).
@@ -232,7 +244,7 @@ Por supuesto, la progresión también se vincula al contenido y a la narrativa d
   En Pokémon, los objetivos a corto plazo consisten en obtener medallas y fortalecer a tu equipo, con el fin supremo de enfrentar al Alto Mando y al campeón de la región.
 ]
 
-=== Sistemas
+=== Sistemas #optional-for-newbies
 ¿Qué sistemas incluye tu juego y cómo impactan en la experiencia del jugador? Los sistemas suelen abarcar:
 
 - Economía y gestión de recursos
@@ -344,8 +356,8 @@ Procura no añadir detalles excesivamente específicos o irrelevantes.
   Beast Card Clash es uno de los proyectos de GDD más recientes y avanzados. Se inspira fuertemente en el minijuego Card-Jitsu Fuego de Club Penguin, combinando elementos sencillos de mundo abierto y _roguelike_. Su estética _cozy_ recuerda a títulos como _Animal Crossing_.
 ]
 
-=== Investigación de mercado
-Investiga el mercado de juegos similares al tuyo (en tiendas digitales, opiniones y otras fuentes) e indica:
+=== Investigación de mercado #optional-for-newbies
+Investiga sobre juegos similares al tuyo (en tiendas digitales, opiniones y otras fuentes) e indica:
 
 - ¿Qué juegos encuentras? ¿Cuáles conoces?
 - ¿Qué ves en común? Esto te ayudará a evitar temas "quemados"
@@ -353,7 +365,7 @@ Investiga el mercado de juegos similares al tuyo (en tiendas digitales, opinione
 - ¿Qué errores ves en los juegos? Así los evitas o los reformulas
 - ¿Cuán populares son estos juegos y sus géneros?
 
-=== Contenido preliminar
+=== Contenido preliminar #optional-for-newbies
 Sección para incluir el material existente del proyecto: bocetos, ideas iniciales de contenido, capturas o pruebas de un prototipo, links, etc.
 
 === Anexos (opcional)

@@ -1,12 +1,14 @@
 /// Verde GDD
 #let green_gdd = rgb(121, 161, 0)
 #let green_gdd_dark = green_gdd.darken(50%)
+#let green_gdd_light = green_gdd.lighten(50%)
 
 #let style(body) = {
   // Página y documento
   set document(title: [Guía para escritura de GDDs])
   set page(
     background: image("assets/logo_green.png", width: 60%),
+    footer: align(right, context counter(page).display("1 de 1", both: true)),
   )
 
   // Texto
@@ -28,6 +30,7 @@
 
   // Elementos varios
   show link: set text(fill: green_gdd)
+  show divider: set line(stroke: green_gdd_dark + 1pt)
 
   body
 }
@@ -57,3 +60,18 @@
 
   #body
 ]
+
+/// Capsula
+#let optional-for-newbies = box(
+  fill: green_gdd_light,
+  inset: 0.2em,
+  radius: 50%,
+  text(size: 0.7em, fill: green_gdd_dark, "Opcional para nuevos proyectos"),
+)
+
+/// Título opcional para nuevos proyectos
+#let optional-heading(title) = {
+  optional-for-newbies
+  h(8pt)
+  heading(level: 1, outlined: false, title)
+}
